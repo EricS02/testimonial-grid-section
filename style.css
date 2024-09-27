@@ -32,14 +32,11 @@
     padding: 20px;    
  }
 
- quotation {
-    height: 50px;   /* Fixed height */
-    width: 50px;    /* Fixed width */
-    position: absolute;  /* If you need it positioned */
-    top: 10px;      /* Adjust as needed */
-    right: 10px;    /* Adjust as needed */
-    opacity: 0.5;   /* Set transparency for effect */
-    z-index: 1;     /* Ensure it stays on top if needed */
+img.quotation {
+    height: 100px;
+    position: absolute; 
+    ;
+    left: 460px;
 }
 
  .purple {
@@ -125,6 +122,16 @@
 }
                              
 
+
+@media only screen and (max-width: 375px) {
+    .cards {
+       display: flex;
+       flex-direction: column;
+       margin: 50px;
+    }
+
+    }
+    
 
 
 
