@@ -1,0 +1,135 @@
+ @import url('https://fonts.google.com/specimen/Barlow+Semi+Condensed');
+ 
+ 
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed'
+ }
+ 
+ .cards {
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px; 
+    grid-template-columns: repeat(4, 1fr);
+    
+ }
+ 
+
+ .cards img {
+    float: left;
+    position: relative;
+    border-radius: 50%;
+    height: 40px;
+    left: 5px;
+ }
+
+
+ .card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;    
+ }
+
+ quotation {
+    height: 50px;   /* Fixed height */
+    width: 50px;    /* Fixed width */
+    position: absolute;  /* If you need it positioned */
+    top: 10px;      /* Adjust as needed */
+    right: 10px;    /* Adjust as needed */
+    opacity: 0.5;   /* Set transparency for effect */
+    z-index: 1;     /* Ensure it stays on top if needed */
+}
+
+ .purple {
+    background-color: hsl(263, 55%, 52%);
+    grid-column: span 2;
+    order: 1;
+ }
+ 
+ .grey {
+    background-color: hsl(217, 19%, 35%);
+    grid-column: span 1;
+    order: 2;
+
+ }
+
+ .white {
+    grid-column: span 1;
+    grid-row: span 2;
+    order: 3;
+    margin: 10px;
+
+ }
+
+ .white2 {
+    grid-column: span 1;
+    order: 4;
+
+ }
+
+ .black {
+    background-color: hsl(219, 29%, 14%);
+    grid-column: span 2;
+    order: 5;
+
+ }
+
+.card h1 {
+    position: relative;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+    left: 20px;
+    top: 5px;
+}
+
+.card h2 {
+    position: relative;
+    color: white;
+    opacity: 50%;
+    font-size: small;
+    font-weight: 300;
+    left: 20px;
+    top: 5px;
+}
+
+.card p {
+    color:white
+}
+
+.white h1, .white h2, .white p, .white2 h1, .white2 h2, .white2 p {
+    color: black;
+}
+
+.white h2, .white2 h2 {
+    color: grey;
+
+}
+
+.main-text {
+    position: relative;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    top: 10px;
+    
+}
+
+.quote {
+    padding: 15px;
+    font-size: 13px;
+    color: white;
+    opacity: 70%;
+}
+                             
+
+
+
+
+
+
+
+ /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
